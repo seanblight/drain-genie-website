@@ -29,8 +29,8 @@
   gap: 26px;
   align-items: center;
   margin-left: auto;
-  
 }
+
 
 .header-menu a {
   color: white;
@@ -38,13 +38,13 @@
   font-weight: 900;
   text-transform: uppercase;
   font-size: 14px;
-  
 }
+
 
 .header-menu a:hover {
   color: #0b89ff;
-  
 }
+
 
 @media (max-width: 1050px) {
   .header-menu {
