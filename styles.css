@@ -1,6 +1,25 @@
 * {
   box-sizing: border-box;
-  .top-bar {
+}
+
+/* ===== FIX HEADER OVERLAP ===== */
+
+.nav,
+.nav-menu {
+  display: none;
+}
+
+.landing {
+  padding-top: 0;
+}
+
+.hero-left {
+  margin-top: 90px;
+}
+
+/* ===== HEADER BAR ===== */
+
+.top-bar {
   width: 100%;
   background: linear-gradient(90deg, #030c18, #061a30);
   border-bottom: 1px solid rgba(30,144,255,0.25);
@@ -8,11 +27,12 @@
 
 .top-inner {
   max-width: 1480px;
-  margin: 80px auto 0;
+  margin: 0 auto;
   padding: 12px 38px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
 }
 
 .top-right {
