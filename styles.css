@@ -24,6 +24,30 @@
   background: linear-gradient(90deg, #030c18, #061a30);
   border-bottom: 1px solid rgba(30,144,255,0.25);
 }
+.header-menu {
+  display: flex;
+  gap: 26px;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.header-menu a:hover {
+  color: #0b89ff;
+}
+
+@media (max-width: 1050px) {
+  .header-menu {
+    display: none;
+  }
+}
 
 .top-inner {
   max-width: 1480px;
