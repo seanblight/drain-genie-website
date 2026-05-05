@@ -31,7 +31,6 @@
   margin-left: auto;
 }
 
-
 .header-menu a {
   color: white;
   text-decoration: none;
@@ -40,13 +39,11 @@
   font-size: 14px;
 }
 
-
 .header-menu a:hover {
   color: #0b89ff;
 }
 
-
-@media (max-width: 1050px) {
+@media (max-width: 500px) {
   .header-menu {
     display: none;
   }
