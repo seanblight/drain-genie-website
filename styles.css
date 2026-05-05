@@ -18,7 +18,7 @@ a {
   padding: 28px 38px 60px;
   background:
     linear-gradient(90deg, rgba(3,12,24,0.98) 0%, rgba(3,12,24,0.88) 36%, rgba(3,12,24,0.35) 58%, rgba(3,12,24,0.1) 100%),
-    url("bathroom-hero.png");
+    url(url("/images/bathroom-hero.png"););
   background-size: cover;
   background-position: center right;
 }
