@@ -29,6 +29,7 @@
   gap: 26px;
   align-items: center;
   margin-left: auto;
+  
 }
 
 .header-menu a {
@@ -37,16 +38,19 @@
   font-weight: 900;
   text-transform: uppercase;
   font-size: 14px;
+  
 }
 
 .header-menu a:hover {
   color: #0b89ff;
+  
 }
 
 @media (max-width: 1050px) {
   .header-menu {
     display: none;
   }
+  
 }
 
 .top-inner {
@@ -56,6 +60,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 }
 
