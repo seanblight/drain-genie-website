@@ -66,6 +66,21 @@ a {
   color: #29a7ff;
 }
 
+.trade-genie-btn {
+  background: linear-gradient(135deg, #35d0ff, #0b8cff);
+  color: #071827 !important;
+  padding: 10px 14px;
+  border-radius: 999px;
+  opacity: 1 !important;
+  box-shadow: 0 10px 28px rgba(53,208,255,0.25);
+}
+
+.trade-genie-btn:hover {
+  color: #071827 !important;
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
 .header-call {
   background: linear-gradient(135deg, #0b8cff, #005eea);
   padding: 13px 20px;
@@ -296,6 +311,75 @@ a {
   font-weight: 900;
 }
 
+/* TRADE GENIE SECTION */
+
+.trade-genie-section {
+  background:
+    radial-gradient(circle at top left, rgba(53,208,255,0.18), transparent 34%),
+    linear-gradient(135deg, #04101f, #08243d);
+  padding: 85px 24px;
+  border-top: 1px solid rgba(53,208,255,0.18);
+  border-bottom: 1px solid rgba(53,208,255,0.18);
+}
+
+.trade-genie-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.35fr 0.9fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.trade-genie-inner h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.1;
+  margin: 10px 0 18px;
+}
+
+.trade-genie-inner p {
+  color: #dbeafe;
+  line-height: 1.75;
+  font-size: 18px;
+}
+
+.trade-genie-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(53,208,255,0.25);
+  border-radius: 22px;
+  padding: 32px;
+  box-shadow: 0 25px 70px rgba(0,0,0,0.28);
+}
+
+.trade-genie-card h3 {
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #35d0ff;
+}
+
+.trade-genie-card p {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.trade-genie-card a {
+  display: inline-block;
+  background: linear-gradient(135deg, #35d0ff, #0b8cff);
+  color: #071827;
+  padding: 14px 22px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 900;
+  box-shadow: 0 14px 35px rgba(53,208,255,0.28);
+  transition: 0.2s ease;
+}
+
+.trade-genie-card a:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
 /* TEAM */
 
 .team-section {
@@ -470,6 +554,10 @@ a {
   font-size: 18px;
 }
 
+.trade-seo-section {
+  background: #071827;
+}
+
 /* FOOTER */
 
 footer {
@@ -477,6 +565,16 @@ footer {
   padding: 34px 24px 90px;
   background: #030b14;
   color: #9fb3c8;
+}
+
+footer a {
+  color: #35d0ff;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 .footer-logo {
@@ -505,6 +603,10 @@ footer {
   }
 
   .why-section {
+    grid-template-columns: 1fr;
+  }
+
+  .trade-genie-inner {
     grid-template-columns: 1fr;
   }
 
@@ -570,6 +672,14 @@ footer {
 
   .help-card h3 {
     font-size: 31px;
+  }
+
+  .trade-genie-section {
+    padding: 70px 18px;
+  }
+
+  .trade-genie-card {
+    padding: 24px;
   }
 
   .sticky-call {
