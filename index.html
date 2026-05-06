@@ -1,577 +1,233 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #06111f;
-  color: white;
-}
-
-a {
-  color: inherit;
-}
-
-/* HEADER */
-
-.site-header {
-  width: 100%;
-  background: rgba(3, 12, 24, 0.96);
-  border-bottom: 1px solid rgba(30,144,255,0.28);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.35);
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  backdrop-filter: blur(12px);
-}
-
-.header-inner {
-  max-width: 1420px;
-  margin: 0 auto;
-  padding: 10px 28px;
-  display: flex;
-  align-items: center;
-  gap: 26px;
-}
-
-.site-logo {
-  width: 170px;
-  height: auto;
-  display: block;
-}
-
-.header-menu {
-  display: flex;
-  gap: 24px;
-  margin-left: auto;
-}
-
-.header-menu a {
-  color: #f2f7ff;
-  text-decoration: none;
-  font-weight: 900;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
-  opacity: 0.9;
-}
-
-.header-menu a:hover {
-  color: #29a7ff;
-}
-
-.header-call {
-  background: linear-gradient(135deg, #0b8cff, #005eea);
-  padding: 13px 20px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 900;
-  margin-left: 14px;
-  white-space: nowrap;
-  box-shadow: 0 14px 35px rgba(0,120,255,0.38);
-}
-<p>Servicing all suburbs in and around Adelaide, including northern, southern, eastern, western suburbs and the Adelaide Hills.</p>
-/* HERO */
-
-.hero-section {
-  min-height: 82vh;
-  padding: 95px 28px 90px;
-  background:
-    linear-gradient(90deg, rgba(3,12,24,0.98) 0%, rgba(3,12,24,0.88) 35%, rgba(3,12,24,0.45) 60%, rgba(3,12,24,0.1) 100%),
-    url("/images/bathroom-hero.png");
-  background-size: cover;
-  background-position: center right;
-}
-
-.hero-content {
-  max-width: 1180px;
-  margin: 0 auto;
-}
-
-.area-tag,
-.blue-title {
-  color: #21a3ff;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-}
-
-.hero-section h1 {
-  font-size: clamp(44px, 6vw, 82px);
-  line-height: 0.95;
-  margin: 14px 0 24px;
-  text-transform: uppercase;
-  letter-spacing: -2px;
-}
-
-.hero-section h1 span {
-  color: #118cff;
-  text-shadow: 0 0 25px rgba(17,140,255,0.35);
-}
-
-.hero-copy {
-  max-width: 620px;
-  font-size: 20px;
-  line-height: 1.55;
-  color: #eaf3ff;
-}
-
-.trust-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin: 32px 0;
-}
-
-.trust-row p {
-  margin: 0;
-  font-weight: 800;
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(33,163,255,0.26);
-  padding: 10px 14px;
-  border-radius: 999px;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.main-call {
-  background: linear-gradient(135deg, #0b8cff, #005eea);
-  padding: 18px 30px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 900;
-  box-shadow: 0 18px 45px rgba(0,120,255,0.42);
-}
-
-.outline-btn {
-  padding: 18px 30px;
-  border: 2px solid rgba(255,255,255,0.85);
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 900;
-  background: rgba(0,0,0,0.18);
-}
-
-.main-call:hover,
-.header-call:hover,
-.help-card a:hover {
-  transform: translateY(-1px);
-  filter: brightness(1.08);
-}
-
-.outline-btn:hover {
-  background: white;
-  color: #07111f;
-}
-
-/* SERVICES */
-
-.service-strip {
-  max-width: 1160px;
-  margin: -48px auto 0;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  background: rgba(5, 24, 44, 0.96);
-  border-radius: 18px;
-  overflow: hidden;
-  border: 1px solid rgba(33,163,255,0.28);
-  box-shadow: 0 25px 70px rgba(0,0,0,0.38);
-}
-
-.service-box {
-  padding: 25px 16px;
-  text-align: center;
-  border-right: 1px solid rgba(255,255,255,0.08);
-  text-decoration: none;
-  transition: 0.2s ease;
-}
-
-.service-box:last-child {
-  border-right: none;
-}
-
-.service-box:hover {
-  background: rgba(11,137,255,0.18);
-  transform: translateY(-3px);
-}
-
-.icon {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-.service-box h3 {
-  margin: 0 0 7px;
-  font-size: 13px;
-  text-transform: uppercase;
-  color: white;
-}
-
-.service-box p {
-  font-size: 13px;
-  color: #cfe2ff;
-  line-height: 1.45;
-  margin: 0;
-}
-
-/* ABOUT */
-
-.why-section {
-  max-width: 1160px;
-  margin: 85px auto;
-  padding: 0 24px;
-  display: grid;
-  grid-template-columns: 1.45fr 0.9fr;
-  gap: 55px;
-  align-items: center;
-}
-
-.big-brand-line {
-  font-size: clamp(34px, 4vw, 52px);
-  margin: 0 0 10px;
-  text-shadow: 0 0 24px rgba(33,163,255,0.28);
-}
-
-.why-section h2 {
-  font-size: clamp(32px, 4vw, 48px);
-  margin: 0 0 16px;
-  line-height: 1.1;
-}
-
-.section-copy {
-  color: #cfe2ff;
-  line-height: 1.7;
-  font-size: 18px;
-}
-
-.help-card {
-  background: linear-gradient(135deg, #075cbd, #003d96);
-  padding: 34px;
-  border-radius: 20px;
-  box-shadow: 0 25px 70px rgba(0,0,0,0.35);
-  border: 1px solid rgba(255,255,255,0.12);
-}
-
-.help-card p {
-  margin-top: 0;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.help-card span {
-  color: #e9f4ff;
-  line-height: 1.5;
-}
-
-.help-card h3 {
-  font-size: 40px;
-  margin: 18px 0;
-}
-
-.help-card a {
-  display: inline-block;
-  background: #087cff;
-  padding: 13px 22px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 900;
-}
-
-/* TEAM */
-
-.team-section {
-  text-align: center;
-  padding: 75px 24px;
-  background: #0b1728;
-}
-
-.team-section h2 {
-  font-size: 40px;
-  margin: 10px 0;
-}
-
-.team-section p {
-  max-width: 800px;
-  margin: auto;
-  color: #dbeafe;
-  line-height: 1.65;
-  font-size: 18px;
-}
-
-/* AREAS */
-
-.areas-section {
-  background: #f5f9ff;
-  color: #07111f;
-  padding: 75px 24px;
-  text-align: center;
-}
-
-.areas-section h2,
-.reviews-section h2,
-.seo-section h2 {
-  font-size: 40px;
-  margin: 10px 0 30px;
-}
-
-.suburb-links {
-  max-width: 1080px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-}
-
-.suburb-links a {
-  border: 1px solid #0b89ff;
-  padding: 12px 18px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 900;
-  color: #07315f;
-  background: white;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-}
-
-.suburb-links a:hover {
-  background: #0b89ff;
-  color: white;
-}
-
-/* REVIEWS */
-
-.reviews-section {
-  padding: 75px 24px;
-  text-align: center;
-  background: #07111f;
-}
-
-.reviews-grid {
-  max-width: 1080px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-
-.reviews-grid div {
-  background: #0e2139;
-  padding: 26px;
-  border-radius: 18px;
-  border: 1px solid rgba(33,163,255,0.24);
-  box-shadow: 0 18px 50px rgba(0,0,0,0.18);
-}
-
-.reviews-grid p {
-  color: #e6eefc;
-  line-height: 1.55;
-}
-
-.stars {
-  color: #ffd54a !important;
-  font-size: 22px;
-}
-
-/* SEO */
-
-.seo-section {
-  padding: 75px 24px;
-  text-align: center;
-  background: #0b1728;
-}
-
-.seo-section p {
-  max-width: 860px;
-  margin: auto;
-  color: #dbeafe;
-  line-height: 1.75;
-  font-size: 18px;
-}
-
-/* FOOTER */
-
-footer {
-  text-align: center;
-  padding: 34px 24px 90px;
-  background: #030b14;
-  color: #9fb3c8;
-}
-
-.footer-logo {
-  width: 160px;
-  margin-bottom: 14px;
-}
-
-.sticky-call {
-  display: none;
-}
-
-/* MOBILE */
-
-@media (max-width: 980px) {
-  .header-menu {
-    display: none;
-  }
-
-  .header-inner {
-    justify-content: space-between;
-  }
-
-  .service-strip {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .why-section {
-    grid-template-columns: 1fr;
-  }
-
-  .reviews-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 700px) {
-  .header-inner {
-    padding: 9px 16px;
-  }
-
-  .site-logo {
-    width: 135px;
-  }
-
-  .header-call {
-    padding: 11px 12px;
-    font-size: 12px;
-    margin-left: 0;
-  }
-
-  .hero-section {
-    min-height: auto;
-    padding: 70px 18px 85px;
-    background:
-      linear-gradient(90deg, rgba(3,12,24,0.97), rgba(3,12,24,0.78)),
-      url("/images/bathroom-hero.png");
-    background-size: cover;
-    background-position: center;
-  }
-
-  .hero-section h1 {
-    letter-spacing: -1px;
-  }
-
-  .hero-copy {
-    font-size: 17px;
-  }
-
-  .service-strip {
-    grid-template-columns: repeat(2, 1fr);
-    margin: -42px 14px 0;
-  }
-
-  .service-box {
-    padding: 20px 12px;
-  }
-
-  .main-call,
-  .outline-btn {
-    width: 100%;
-    text-align: center;
-  }
-
-  .help-card h3 {
-    font-size: 31px;
-  }
-
-  .sticky-call {
-    display: block;
-    position: fixed;
-    bottom: 14px;
-    left: 14px;
-    right: 14px;
-    z-index: 9999;
-    background: linear-gradient(135deg, #0b8cff, #005eea);
-    padding: 16px;
-    border-radius: 12px;
-    text-align: center;
-    font-weight: 900;
-    text-decoration: none;
-    box-shadow: 0 16px 40px rgba(0,120,255,0.45);
-  }
-}
-/* Existing CSS above */
-
-
-/* ===== SERVICE AREAS SECTION ===== */
-
-.service-areas {
-  background: #071827;
-  color: #ffffff;
-  padding: 80px 20px;
-}
-
-.service-areas .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.section-tag {
-  color: #35d0ff;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  margin-bottom: 10px;
-}
-
-.service-areas h2 {
-  font-size: clamp(32px, 5vw, 52px);
-  margin-bottom: 18px;
-}
-
-.service-areas-intro {
-  max-width: 780px;
-  color: #d7e4ee;
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 40px;
-}
-
-.suburb-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-
-.suburb-card {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 18px;
-  padding: 24px;
-}
-
-.suburb-card h3 {
-  color: #35d0ff;
-  margin-bottom: 12px;
-  font-size: 22px;
-}
-
-.suburb-card p {
-  color: #d7e4ee;
-  line-height: 1.6;
-  margin: 0;
-}
-
-@media (max-width: 900px) {
-  .suburb-grid {
-    grid-template-columns: 1fr;
-  }
-}
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The Drain Genie | Blocked Drains & Emergency Plumber Adelaide</title>
+  <meta name="description" content="Blocked drain in Adelaide? The Drain Genie clears blocked drains fast with same day service, CCTV drain inspections, sewer repairs, stormwater drainage and emergency plumbing. Call 0437 478 415.">
+
+  <link rel="canonical" href="https://thedraingenie.com.au/">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-link">
+      <img src="/images/logo-wide.png" alt="The Drain Genie Plumbing Experts Logo" class="site-logo">
+    </a>
+
+    <nav class="header-menu">
+      <a href="#about">About Us</a>
+      <a href="#services">Our Services</a>
+      <a href="#team">Our Team</a>
+      <a href="#areas">Service Areas</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="tel:61437478415" class="header-call">Call 0437 478 415</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero-section">
+    <div class="hero-content">
+      <p class="area-tag">Port Adelaide Based • Servicing Greater Adelaide</p>
+
+      <h1>Blocked Drain?<br><span>We Clear It Fast.</span></h1>
+
+      <p class="hero-copy">
+        Professional drainage specialists providing same day service for blocked drains,
+        CCTV inspections, sewer repairs and stormwater drainage across Adelaide.
+      </p>
+
+      <div class="trust-row">
+        <p>✓ Same Day Service</p>
+        <p>✓ Licensed & Insured</p>
+        <p>✓ Upfront Pricing</p>
+        <p>✓ We Fix the Cause</p>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="tel:61437478415" class="main-call">Call 0437 478 415</a>
+        <a href="#services" class="outline-btn">View Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="service-strip">
+    <a href="blocked-drains-adelaide.html" class="service-box">
+      <div class="icon">🚿</div>
+      <h3>Blocked Drains</h3>
+      <p>Clearing drains fast<br>and fixing the cause.</p>
+    </a>
+
+    <a href="cctv-drain-inspections-adelaide.html" class="service-box">
+      <div class="icon">📹</div>
+      <h3>CCTV Inspections</h3>
+      <p>Find roots, cracks<br>and hidden issues.</p>
+    </a>
+
+    <a href="sewer-repairs-adelaide.html" class="service-box">
+      <div class="icon">🔧</div>
+      <h3>Sewer Repairs</h3>
+      <p>Repair damaged<br>or broken pipes.</p>
+    </a>
+
+    <a href="stormwater-drainage-adelaide.html" class="service-box">
+      <div class="icon">🌧️</div>
+      <h3>Stormwater Drainage</h3>
+      <p>Stormwater drains,<br>pits and flooding.</p>
+    </a>
+
+    <a href="emergency-plumber-adelaide.html" class="service-box">
+      <div class="icon">🚨</div>
+      <h3>Emergency Drainage</h3>
+      <p>Urgent drainage<br>and plumbing help.</p>
+    </a>
+
+    <div class="service-box">
+      <div class="icon">🏗️</div>
+      <h3>Civil Drainage Works</h3>
+      <p>New installs,<br>repairs and more.</p>
+    </div>
+  </section>
+
+  <section id="about" class="why-section">
+    <div>
+      <p class="blue-title big-brand-line">Your Wish Is Our Fix</p>
+      <h2>We Don’t Just Clear Drains.<br>We Find the Cause.</h2>
+      <p class="section-copy">
+        The Drain Genie is a Port Adelaide based plumbing and drainage business focused on blocked drains,
+        CCTV inspections, sewer repairs, stormwater drainage and practical civil drainage solutions.
+      </p>
+    </div>
+
+    <div id="contact" class="help-card">
+      <p>Need Help Today?</p>
+      <span>Call The Drain Genie now<br>for fast, reliable service.</span>
+      <h3>0437 478 415</h3>
+      <a href="tel:61437478415">Call Now</a>
+    </div>
+  </section>
+
+  <section id="team" class="team-section">
+    <p class="blue-title">Our Team</p>
+    <h2>Local Drainage Specialists You Can Rely On</h2>
+    <p>
+      We are building a reliable local team focused on honest service, clear communication and getting drainage problems fixed properly.
+    </p>
+  </section>
+
+  <section id="areas" class="areas-section">
+    <div class="container">
+      <p class="section-tag">Adelaide Wide Service</p>
+
+      <h2>Blocked Drains & Plumbing Across Adelaide</h2>
+
+      <p class="service-areas-intro">
+        The Drain Genie provides same-day blocked drain, sewer and emergency plumbing services across Adelaide and surrounding suburbs.
+      </p>
+
+      <div class="suburb-grid">
+
+        <div class="suburb-card">
+          <h3>North Adelaide</h3>
+          <p>
+            Prospect, Enfield, Blair Athol, Mawson Lakes, Modbury, Salisbury,
+            Elizabeth, Para Hills, Pooraka, Gepps Cross, Kilburn and Greenacres.
+          </p>
+        </div>
+
+        <div class="suburb-card">
+          <h3>South Adelaide</h3>
+          <p>
+            Marion, Morphett Vale, Noarlunga, Hallett Cove, Glenelg, Brighton,
+            Seacliff, Aberfoyle Park, Happy Valley, Flagstaff Hill and Reynella.
+          </p>
+        </div>
+
+        <div class="suburb-card">
+          <h3>East Adelaide</h3>
+          <p>
+            Norwood, Burnside, Magill, Rostrevor, Campbelltown, Tranmere,
+            Kensington, Payneham, Walkerville, Athelstone and Newton.
+          </p>
+        </div>
+
+        <div class="suburb-card">
+          <h3>West Adelaide</h3>
+          <p>
+            Henley Beach, Grange, Fulham, West Lakes, Port Adelaide, Semaphore,
+            Findon, Flinders Park, Mile End, Lockleys and Royal Park.
+          </p>
+        </div>
+
+        <div class="suburb-card">
+          <h3>Adelaide Hills</h3>
+          <p>
+            Stirling, Crafers, Aldgate, Bridgewater, Hahndorf, Mount Barker,
+            Nairne, Littlehampton, Lobethal and Woodside.
+          </p>
+        </div>
+
+        <div class="suburb-card">
+          <h3>Outer Adelaide</h3>
+          <p>
+            Gawler, Angle Vale, Virginia, Two Wells, Aldinga, Seaford,
+            McLaren Vale, Willunga and surrounding areas.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews-section">
+    <p class="blue-title">Customer Trust</p>
+    <h2>Fast, Honest Drainage Help</h2>
+
+    <div class="reviews-grid">
+      <div>
+        <p class="stars">★★★★★</p>
+        <p>“Fast, reliable and actually fixed the problem properly.”</p>
+      </div>
+
+      <div>
+        <p class="stars">★★★★★</p>
+        <p>“Same day service and no mucking around.”</p>
+      </div>
+
+      <div>
+        <p class="stars">★★★★★</p>
+        <p>“Explained the issue clearly and got it sorted.”</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="seo-section">
+    <h2>Blocked Drains, Sewer Repairs & Stormwater Drainage Adelaide</h2>
+    <p>
+      The Drain Genie helps Adelaide homes and businesses with blocked drains, CCTV drain inspections,
+      sewer repairs, stormwater drainage issues and urgent plumbing maintenance. Based around Port Adelaide,
+      we service all suburbs in and around Adelaide, including northern, southern, eastern, western suburbs,
+      the Adelaide Hills and outer Adelaide areas.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <img src="/images/logo-wide.png" alt="The Drain Genie Logo" class="footer-logo">
+  <p>© The Drain Genie | A Trade Genie Business</p>
+  <p>Blocked Drains • CCTV Inspections • Sewer Repairs • Stormwater Drainage • Emergency Plumbing</p>
+</footer>
+
+<a href="tel:61437478415" class="sticky-call">📞 Call 0437 478 415</a>
+
+</body>
+</html>
