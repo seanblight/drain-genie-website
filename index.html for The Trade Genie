@@ -1,1 +1,340 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>The Trade Genie | Licensed Plumbers Adelaide</title>
+
+  <meta name="description" content="The Trade Genie provides professional licensed plumbing services across Adelaide, including emergency plumbing, hot water repairs, gas fitting, roof plumbing, maintenance plumbing, bathroom plumbing and blocked drains.">
+
+  <link rel="canonical" href="https://thetradegenie.com.au/">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+
+    <a href="index.html" class="logo-link">
+      <img src="/images/trade-genie-logo.png" alt="The Trade Genie Licensed Plumbers Adelaide Logo" class="site-logo">
+    </a>
+
+    <nav class="header-menu">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#areas">Areas</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#contact">Contact</a>
+      <a href="https://thedraingenie.com.au" class="drain-genie-btn">The Drain Genie</a>
+    </nav>
+
+    <a href="tel:61437478415" class="header-call">Call 0437 478 415</a>
+
+  </div>
+</header>
+
+<main>
+
+  <section class="hero-section">
+    <div class="hero-content">
+
+      <p class="area-tag">Licensed Plumbers Adelaide • Residential • Commercial • Maintenance</p>
+
+      <h1>Professional Licensed<br><span>Plumbers Adelaide</span></h1>
+
+      <p class="hero-copy">
+        The Trade Genie provides reliable plumbing services across Adelaide, covering everything from emergency plumbing and hot water repairs to gas fitting, roof plumbing, maintenance plumbing, bathroom plumbing and blocked drains.
+      </p>
+
+      <div class="trust-row">
+        <p>✓ Licensed & Insured</p>
+        <p>✓ Adelaide Wide Service</p>
+        <p>✓ Emergency Plumbing</p>
+        <p>✓ All Plumbing Covered</p>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="tel:61437478415" class="main-call">Call 0437 478 415</a>
+        <a href="#services" class="outline-btn">View Plumbing Services</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="services" class="service-strip">
+
+    <a href="emergency-plumber-adelaide.html" class="service-box">
+      <div class="icon">🚨</div>
+      <h3>Emergency Plumbing</h3>
+      <p>Urgent plumbing help<br>across Adelaide.</p>
+    </a>
+
+    <a href="hot-water-repairs-adelaide.html" class="service-box">
+      <div class="icon">🔥</div>
+      <h3>Hot Water Repairs</h3>
+      <p>Repairs, replacements<br>and servicing.</p>
+    </a>
+
+    <a href="gas-fitting-adelaide.html" class="service-box">
+      <div class="icon">🛠️</div>
+      <h3>Gas Fitting</h3>
+      <p>Gas installs, repairs<br>and appliance work.</p>
+    </a>
+
+    <a href="maintenance-plumber-adelaide.html" class="service-box">
+      <div class="icon">🔧</div>
+      <h3>Maintenance Plumbing</h3>
+      <p>Ongoing repairs<br>and property upkeep.</p>
+    </a>
+
+    <a href="roof-plumber-adelaide.html" class="service-box">
+      <div class="icon">🏠</div>
+      <h3>Roof Plumbing</h3>
+      <p>Gutters, downpipes,<br>leaks and stormwater.</p>
+    </a>
+
+    <a href="https://thedraingenie.com.au" class="service-box">
+      <div class="icon">🚿</div>
+      <h3>Blocked Drains</h3>
+      <p>Visit our specialist<br>Drain Genie division.</p>
+    </a>
+
+  </section>
+
+  <section id="about" class="about-section">
+    <div>
+      <p class="blue-title big-brand-line">Your Trade Wish Is Our Fix</p>
+
+      <h2>More Than Just Drains — Full-Service Plumbing Across Adelaide</h2>
+
+      <p class="section-copy">
+        The Trade Genie is a professional licensed plumbing business servicing homes, businesses, builders and property managers across Adelaide. We cover all aspects of plumbing, from small maintenance jobs through to larger plumbing repairs, hot water issues, gas fitting, roof plumbing and emergency call-outs.
+      </p>
+
+      <p class="section-copy">
+        For specialist drain clearing, CCTV drain inspections, sewer repairs and stormwater drainage, our dedicated drainage division, The Drain Genie, provides focused blocked drain services across Adelaide.
+      </p>
+    </div>
+
+    <div id="contact" class="help-card">
+      <p>Need A Plumber Today?</p>
+      <span>Call The Trade Genie for reliable Adelaide plumbing services.</span>
+      <h3>0437 478 415</h3>
+      <a href="tel:61437478415">Call Now</a>
+    </div>
+  </section>
+
+  <section class="drain-genie-section">
+    <div class="drain-genie-inner">
+      <div>
+        <p class="section-tag">Specialist Drainage Division</p>
+        <h2>The Drain Genie</h2>
+        <p>
+          The Drain Genie is our dedicated blocked drain and drainage division, built specifically for drain clearing, CCTV inspections, sewer repairs, stormwater drainage and emergency drainage problems across Adelaide.
+        </p>
+      </div>
+
+      <div class="drain-genie-card">
+        <h3>Blocked Drain?</h3>
+        <p>
+          Visit The Drain Genie for fast same-day blocked drain clearing, CCTV inspections and sewer repairs.
+        </p>
+        <a href="https://thedraingenie.com.au">Visit The Drain Genie</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-section">
+    <p class="blue-title">Our Plumbing Services</p>
+    <h2>Plumbing Services Adelaide</h2>
+
+    <div class="services-grid">
+
+      <div class="large-service-card">
+        <h3>Emergency Plumber Adelaide</h3>
+        <p>
+          Fast response plumbing help for urgent leaks, burst pipes, blocked toilets, no hot water and emergency plumbing issues.
+        </p>
+      </div>
+
+      <div class="large-service-card">
+        <h3>General Plumbing</h3>
+        <p>
+          Reliable plumbing repairs, installations, tap repairs, toilet repairs, water leaks, pipework and everyday plumbing maintenance.
+        </p>
+      </div>
+
+      <div class="large-service-card">
+        <h3>Hot Water Repairs</h3>
+        <p>
+          Hot water system repairs, replacements, servicing and fault finding for Adelaide homes and businesses.
+        </p>
+      </div>
+
+      <div class="large-service-card">
+        <h3>Gas Fitting</h3>
+        <p>
+          Licensed gas fitting services including gas appliance installations, gas leak repairs and gas plumbing work.
+        </p>
+      </div>
+
+      <div class="large-service-card">
+        <h3>Roof Plumbing</h3>
+        <p>
+          Gutters, downpipes, roof leaks, stormwater drainage, flashings and roof plumbing maintenance.
+        </p>
+      </div>
+
+      <div class="large-service-card">
+        <h3>Bathroom & Kitchen Plumbing</h3>
+        <p>
+          Plumbing for bathrooms, kitchens, laundries, renovations, fixture replacements and new installations.
+        </p>
+      </div>
+
+      <div class="large-service-card">
+        <h3>Commercial Plumbing</h3>
+        <p>
+          Plumbing support for shops, offices, commercial properties, strata sites, builders and property managers.
+        </p>
+      </div>
+
+      <div class="large-service-card">
+        <h3>Blocked Drains & Drainage</h3>
+        <p>
+          Drain clearing, CCTV inspections, high pressure jetting, sewer repairs and stormwater drainage through The Drain Genie.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="areas" class="areas-section">
+    <div class="container">
+
+      <p class="section-tag">Adelaide Wide Plumbing</p>
+
+      <h2>Servicing Adelaide & Surrounding Suburbs</h2>
+
+      <p class="service-areas-intro">
+        The Trade Genie provides licensed plumbing services across Adelaide, including northern, southern, eastern, western suburbs, the Adelaide Hills and outer Adelaide areas.
+      </p>
+
+      <div class="suburb-grid">
+
+        <div class="suburb-card">
+          <h3>North Adelaide</h3>
+          <p>Prospect, Enfield, Mawson Lakes, Modbury, Salisbury, Elizabeth, Para Hills, Pooraka, Greenacres, Gepps Cross and surrounding suburbs.</p>
+        </div>
+
+        <div class="suburb-card">
+          <h3>South Adelaide</h3>
+          <p>Glenelg, Brighton, Seacliff, Hallett Cove, Morphett Vale, Noarlunga, Reynella, Marion, Happy Valley and Flagstaff Hill.</p>
+        </div>
+
+        <div class="suburb-card">
+          <h3>East Adelaide</h3>
+          <p>Norwood, Burnside, Magill, Rostrevor, Campbelltown, Tranmere, Kensington, Payneham, Walkerville and Newton.</p>
+        </div>
+
+        <div class="suburb-card">
+          <h3>West Adelaide</h3>
+          <p>Port Adelaide, Semaphore, Henley Beach, Grange, Fulham, West Lakes, Findon, Flinders Park, Lockleys and Royal Park.</p>
+        </div>
+
+        <div class="suburb-card">
+          <h3>Adelaide Hills</h3>
+          <p>Mount Barker, Hahndorf, Stirling, Bridgewater, Crafers, Aldgate, Nairne, Woodside and nearby hills areas.</p>
+        </div>
+
+        <div class="suburb-card">
+          <h3>Outer Adelaide</h3>
+          <p>Gawler, Angle Vale, Virginia, Two Wells, Seaford, Aldinga, McLaren Vale, Willunga and surrounding outer areas.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="why-us" class="why-us-section">
+    <p class="blue-title">Why Choose Us?</p>
+    <h2>Reliable, Licensed & Professional Adelaide Plumbers</h2>
+
+    <div class="why-grid">
+
+      <div>
+        <h3>Licensed Plumbing Work</h3>
+        <p>Professional plumbing completed properly, safely and to a high standard.</p>
+      </div>
+
+      <div>
+        <h3>Clear Communication</h3>
+        <p>We explain the issue, the options and the best way to fix the problem.</p>
+      </div>
+
+      <div>
+        <h3>Adelaide Wide Service</h3>
+        <p>Local plumbing support across Adelaide suburbs and surrounding areas.</p>
+      </div>
+
+      <div>
+        <h3>All Plumbing Covered</h3>
+        <p>From drains and hot water to gas, roofing, maintenance and emergency plumbing.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="reviews-section">
+    <p class="blue-title">Customer Trust</p>
+    <h2>Professional Plumbing Help When You Need It</h2>
+
+    <div class="reviews-grid">
+      <div>
+        <p class="stars">★★★★★</p>
+        <p>“Fast, reliable and easy to deal with.”</p>
+      </div>
+
+      <div>
+        <p class="stars">★★★★★</p>
+        <p>“Explained the issue clearly and got it sorted properly.”</p>
+      </div>
+
+      <div>
+        <p class="stars">★★★★★</p>
+        <p>“Professional service and no mucking around.”</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="seo-section">
+    <h2>Licensed Plumber Adelaide</h2>
+    <p>
+      The Trade Genie provides professional licensed plumbing services across Adelaide for residential, commercial and maintenance plumbing needs. Our services include emergency plumbing, hot water repairs, gas fitting, roof plumbing, bathroom plumbing, kitchen plumbing, general maintenance plumbing and blocked drains through our specialist drainage division, The Drain Genie.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <img src="/images/trade-genie-logo.png" alt="The Trade Genie Logo" class="footer-logo">
+
+  <p>© The Trade Genie | Licensed Plumbers Adelaide</p>
+
+  <p>
+    Emergency Plumbing • Hot Water • Gas Fitting • Roof Plumbing • Maintenance Plumbing • Blocked Drains
+  </p>
+
+  <p>
+    Specialist blocked drain services:
+    <a href="https://thedraingenie.com.au">Visit The Drain Genie</a>
+  </p>
+</footer>
+
+<a href="tel:61437478415" class="sticky-call">📞 Call 0437 478 415</a>
+
+</body>
+</html>
