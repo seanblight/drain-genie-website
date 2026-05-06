@@ -40,7 +40,7 @@ a {
 }
 
 .site-logo {
-  width: 170px;
+  width: 190px;
   height: auto;
   display: block;
 }
@@ -59,6 +59,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.3px;
   opacity: 0.9;
+  transition: 0.2s ease;
 }
 
 .header-menu a:hover {
@@ -74,16 +75,24 @@ a {
   margin-left: 14px;
   white-space: nowrap;
   box-shadow: 0 14px 35px rgba(0,120,255,0.38);
+  transition: 0.2s ease;
 }
-<p>Servicing all suburbs in and around Adelaide, including northern, southern, eastern, western suburbs and the Adelaide Hills.</p>
+
 /* HERO */
 
 .hero-section {
   min-height: 82vh;
   padding: 95px 28px 90px;
   background:
-    linear-gradient(90deg, rgba(3,12,24,0.98) 0%, rgba(3,12,24,0.88) 35%, rgba(3,12,24,0.45) 60%, rgba(3,12,24,0.1) 100%),
+    linear-gradient(
+      90deg,
+      rgba(3,12,24,0.98) 0%,
+      rgba(3,12,24,0.88) 35%,
+      rgba(3,12,24,0.45) 60%,
+      rgba(3,12,24,0.1) 100%
+    ),
     url("/images/bathroom-hero.png");
+
   background-size: cover;
   background-position: center right;
 }
@@ -150,6 +159,7 @@ a {
   text-decoration: none;
   font-weight: 900;
   box-shadow: 0 18px 45px rgba(0,120,255,0.42);
+  transition: 0.2s ease;
 }
 
 .outline-btn {
@@ -159,12 +169,13 @@ a {
   text-decoration: none;
   font-weight: 900;
   background: rgba(0,0,0,0.18);
+  transition: 0.2s ease;
 }
 
 .main-call:hover,
 .header-call:hover,
 .help-card a:hover {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
   filter: brightness(1.08);
 }
 
@@ -213,7 +224,6 @@ a {
   margin: 0 0 7px;
   font-size: 13px;
   text-transform: uppercase;
-  color: white;
 }
 
 .service-box p {
@@ -258,7 +268,6 @@ a {
   padding: 34px;
   border-radius: 20px;
   box-shadow: 0 25px 70px rgba(0,0,0,0.35);
-  border: 1px solid rgba(255,255,255,0.12);
 }
 
 .help-card p {
@@ -307,45 +316,70 @@ a {
   font-size: 18px;
 }
 
-/* AREAS */
+/* SERVICE AREAS */
 
 .areas-section {
-  background: #f5f9ff;
-  color: #07111f;
-  padding: 75px 24px;
-  text-align: center;
-}
-
-.areas-section h2,
-.reviews-section h2,
-.seo-section h2 {
-  font-size: 40px;
-  margin: 10px 0 30px;
-}
-
-.suburb-links {
-  max-width: 1080px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-}
-
-.suburb-links a {
-  border: 1px solid #0b89ff;
-  padding: 12px 18px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 900;
-  color: #07315f;
-  background: white;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-}
-
-.suburb-links a:hover {
-  background: #0b89ff;
+  background: #071827;
+  padding: 90px 20px;
   color: white;
+}
+
+.areas-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-tag {
+  color: #35d0ff;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.areas-section h2 {
+  font-size: clamp(34px, 5vw, 54px);
+  margin-bottom: 20px;
+}
+
+.service-areas-intro {
+  max-width: 800px;
+  color: #d7e4ee;
+  line-height: 1.7;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+.suburb-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.suburb-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 18px;
+  padding: 26px;
+  transition: 0.25s ease;
+}
+
+.suburb-card:hover {
+  transform: translateY(-4px);
+  border-color: #35d0ff;
+}
+
+.suburb-card h3 {
+  color: #35d0ff;
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 22px;
+}
+
+.suburb-card p {
+  margin: 0;
+  line-height: 1.7;
+  color: #d7e4ee;
 }
 
 /* REVIEWS */
@@ -354,6 +388,11 @@ a {
   padding: 75px 24px;
   text-align: center;
   background: #07111f;
+}
+
+.reviews-section h2 {
+  font-size: 40px;
+  margin: 10px 0 30px;
 }
 
 .reviews-grid {
@@ -369,7 +408,6 @@ a {
   padding: 26px;
   border-radius: 18px;
   border: 1px solid rgba(33,163,255,0.24);
-  box-shadow: 0 18px 50px rgba(0,0,0,0.18);
 }
 
 .reviews-grid p {
@@ -388,6 +426,11 @@ a {
   padding: 75px 24px;
   text-align: center;
   background: #0b1728;
+}
+
+.seo-section h2 {
+  font-size: 40px;
+  margin-bottom: 24px;
 }
 
 .seo-section p {
@@ -419,6 +462,7 @@ footer {
 /* MOBILE */
 
 @media (max-width: 980px) {
+
   .header-menu {
     display: none;
   }
@@ -438,15 +482,20 @@ footer {
   .reviews-grid {
     grid-template-columns: 1fr;
   }
+
+  .suburb-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 700px) {
+
   .header-inner {
     padding: 9px 16px;
   }
 
   .site-logo {
-    width: 135px;
+    width: 140px;
   }
 
   .header-call {
@@ -458,15 +507,17 @@ footer {
   .hero-section {
     min-height: auto;
     padding: 70px 18px 85px;
+
     background:
-      linear-gradient(90deg, rgba(3,12,24,0.97), rgba(3,12,24,0.78)),
+      linear-gradient(
+        90deg,
+        rgba(3,12,24,0.97),
+        rgba(3,12,24,0.78)
+      ),
       url("/images/bathroom-hero.png");
+
     background-size: cover;
     background-position: center;
-  }
-
-  .hero-section h1 {
-    letter-spacing: -1px;
   }
 
   .hero-copy {
@@ -499,79 +550,16 @@ footer {
     left: 14px;
     right: 14px;
     z-index: 9999;
+
     background: linear-gradient(135deg, #0b8cff, #005eea);
+
     padding: 16px;
     border-radius: 12px;
+
     text-align: center;
     font-weight: 900;
     text-decoration: none;
+
     box-shadow: 0 16px 40px rgba(0,120,255,0.45);
-  }
-}
-/* Existing CSS above */
-
-
-/* ===== SERVICE AREAS SECTION ===== */
-
-.service-areas {
-  background: #071827;
-  color: #ffffff;
-  padding: 80px 20px;
-}
-
-.service-areas .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.section-tag {
-  color: #35d0ff;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  margin-bottom: 10px;
-}
-
-.service-areas h2 {
-  font-size: clamp(32px, 5vw, 52px);
-  margin-bottom: 18px;
-}
-
-.service-areas-intro {
-  max-width: 780px;
-  color: #d7e4ee;
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 40px;
-}
-
-.suburb-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-
-.suburb-card {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 18px;
-  padding: 24px;
-}
-
-.suburb-card h3 {
-  color: #35d0ff;
-  margin-bottom: 12px;
-  font-size: 22px;
-}
-
-.suburb-card p {
-  color: #d7e4ee;
-  line-height: 1.6;
-  margin: 0;
-}
-
-@media (max-width: 900px) {
-  .suburb-grid {
-    grid-template-columns: 1fr;
   }
 }
