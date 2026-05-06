@@ -75,7 +75,7 @@ a {
   white-space: nowrap;
   box-shadow: 0 14px 35px rgba(0,120,255,0.38);
 }
-
+<p>Servicing all suburbs in and around Adelaide, including northern, southern, eastern, western suburbs and the Adelaide Hills.</p>
 /* HERO */
 
 .hero-section {
@@ -506,5 +506,72 @@ footer {
     font-weight: 900;
     text-decoration: none;
     box-shadow: 0 16px 40px rgba(0,120,255,0.45);
+  }
+}
+/* Existing CSS above */
+
+
+/* ===== SERVICE AREAS SECTION ===== */
+
+.service-areas {
+  background: #071827;
+  color: #ffffff;
+  padding: 80px 20px;
+}
+
+.service-areas .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-tag {
+  color: #35d0ff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.service-areas h2 {
+  font-size: clamp(32px, 5vw, 52px);
+  margin-bottom: 18px;
+}
+
+.service-areas-intro {
+  max-width: 780px;
+  color: #d7e4ee;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.suburb-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.suburb-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.suburb-card h3 {
+  color: #35d0ff;
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.suburb-card p {
+  color: #d7e4ee;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .suburb-grid {
+    grid-template-columns: 1fr;
   }
 }
