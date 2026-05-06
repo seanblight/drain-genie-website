@@ -83,6 +83,7 @@ a {
 .hero-section {
   min-height: 82vh;
   padding: 95px 28px 90px;
+
   background:
     linear-gradient(
       90deg,
@@ -380,6 +381,34 @@ a {
   margin: 0;
   line-height: 1.7;
   color: #d7e4ee;
+}
+
+/* SUBURB LINKS */
+
+.suburb-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.suburb-links a {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(53,208,255,0.22);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.suburb-links a:hover {
+  background: #35d0ff;
+  color: #071827;
+  transform: translateY(-2px);
 }
 
 /* REVIEWS */
